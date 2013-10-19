@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleReciever", "ConsoleApplication1\ConsoleReciever.csproj", "{A5866602-5ED0-4D93-925B-0F8835A595F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleReciever", "udprecieverconsole\ConsoleReciever.csproj", "{A5866602-5ED0-4D93-925B-0F8835A595F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
