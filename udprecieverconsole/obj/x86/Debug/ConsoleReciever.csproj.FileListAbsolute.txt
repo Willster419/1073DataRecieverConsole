@@ -9,4 +9,4 @@ C:\Users\Willstah\workspace\visual studio 2010\Projects\frcteam1073-electrical.u
 C:\Users\Willstah\workspace\visual studio 2010\Projects\frcteam1073-electrical.updrecieverconsole\udprecieverconsole\obj\x86\Debug\ConsoleApplication1.pdb
 C:\Users\Willstah\workspace\visual studio 2010\Projects\frcteam1073-electrical.updrecieverconsole\udprecieverconsole\bin\Debug\ConsoleApplication1.exe
 C:\Users\Willstah\workspace\visual studio 2010\Projects\frcteam1073-electrical.updrecieverconsole\udprecieverconsole\bin\Debug\ConsoleApplication1.pdb
-C:\Users\Willstah\workspace\visual studio 2010\Projects\frcteam1073-electrical.updrecieverconsole\udprecieverconsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Willstah\workspace\visual studio 2010\Projects\frcteam1073-electrical.updrecieverconsole\udprecieverconsole\obj\x86\Debug\ConsoleReciever.csprojResolveAssemblyReference.cache

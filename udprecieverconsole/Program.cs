@@ -17,12 +17,23 @@ namespace ConsoleReciever
             Socket newsock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             newsock.Bind(ipep);
             EndPoint Remote = (EndPoint)(ipep);
+            String c;
+            int crecv;
+            byte[] cdata;
+            IPEndPoint cipep = new IPEndPoint(IPAddress.Any, 1166);
+            Socket cnewsock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            cnewsock.Bind(cipep);
+            EndPoint cRemote = (EndPoint)(cipep);
             while (true)
             {
                 data = new byte[1024];
                 recv = newsock.ReceiveFrom(data, ref Remote);
                 s = Encoding.ASCII.GetString(data, 0, recv);
-                Console.WriteLine( s.Substring(34, 20));
+                Console.WriteLine(s);
+                cdata = new byte[1024];
+                crecv = cnewsock.ReceiveFrom(cdata, ref cRemote);
+                c = Encoding.ASCII.GetString(cdata, 0, crecv);
+                Console.WriteLine(c);
             }
         }
     }
