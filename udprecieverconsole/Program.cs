@@ -29,11 +29,11 @@ namespace ConsoleReciever
                 data = new byte[1024];
                 recv = newsock.ReceiveFrom(data, ref Remote);
                 s = Encoding.ASCII.GetString(data, 0, recv);
-                Console.WriteLine(s);
+                Console.WriteLine(s.Substring(35,50));
                 cdata = new byte[1024];
                 crecv = cnewsock.ReceiveFrom(cdata, ref cRemote);
                 c = Encoding.ASCII.GetString(cdata, 0, crecv);
-                Console.WriteLine(c);
+                //Console.WriteLine(c);
             }
         }
     }
