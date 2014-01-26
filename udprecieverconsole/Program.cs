@@ -25,15 +25,17 @@ namespace ConsoleReciever
             cnewsock.Bind(cipep);
             EndPoint cRemote = (EndPoint)(cipep);
             while (true)
-            {
+          {
                 data = new byte[1024];
                 recv = newsock.ReceiveFrom(data, ref Remote);
                 s = Encoding.ASCII.GetString(data, 0, recv);
-                Console.WriteLine(s.Substring(35,50));
+                Console.WriteLine(s.Substring(35,75));//only what we need to see
                 cdata = new byte[1024];
                 crecv = cnewsock.ReceiveFrom(cdata, ref cRemote);
                 c = Encoding.ASCII.GetString(cdata, 0, crecv);
-                //Console.WriteLine(c);
+
+                //Console.ReadLine(); //this will pause the console
+                //Console.WriteLine(c); //we dont want to do this quite yet
             }
         }
     }
