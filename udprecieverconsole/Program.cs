@@ -15,6 +15,7 @@ namespace ConsoleReciever
             byte[] data;
             IPEndPoint ipep = new IPEndPoint(IPAddress.Any, 1165);
             Socket newsock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            newsock.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
             newsock.Bind(ipep);
             EndPoint Remote = (EndPoint)(ipep);
             String c;
@@ -22,6 +23,7 @@ namespace ConsoleReciever
             byte[] cdata;
             IPEndPoint cipep = new IPEndPoint(IPAddress.Any, 1166);
             Socket cnewsock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            cnewsock.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
             cnewsock.Bind(cipep);
             EndPoint cRemote = (EndPoint)(cipep);
             while (true)
